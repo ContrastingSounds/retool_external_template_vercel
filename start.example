@@ -3,12 +3,15 @@
 trap 'kill $(jobs -p)' EXIT
 
 export BACKEND_PORT=3000
+
 export JWT_SECRET=my_secret_token
 
 export GOOGLE_CLIENT_ID=abcd1234567890.apps.googleusercontent.com
 export GOOGLE_CLIENT_SECRET=abcd1234567890
 
 export FRONTEND_PORT=3001
+
+RETOOL_API_KEY=Bearer retool_01gh9pd7qre20ptp9b51zrpfg8
 
 # for production start scripts, change 'yarn dev' to 'yarn start'
 yarn dev

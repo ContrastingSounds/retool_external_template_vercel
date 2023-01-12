@@ -19,3 +19,14 @@ content-type: application/json
 GET http://localhost:3001/api/protected
 accept: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIiwicm9sZXMiOiJbXCJhZG1pblwiXSIsImlhdCI6MTY0Nzg5ODU4MywiZXhwIjoxNjQ3OTAwMzgzfQ.M151tM39ummyhm1m6GYZHZfuG8-t32DA1evjX2kV5AE
+
+### Get EmbedUrl
+
+POST http://localhost:3001/embedUrl
+content-type: application/json
+
+{
+    "externalIdentifier":"",
+    "groups":"[5,6]",
+    "pageUuid":"abc"
+}

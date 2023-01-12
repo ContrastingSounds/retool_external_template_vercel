@@ -29,7 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack --mode development",
+    "build": "webpack --mode development --host 0.0.0.0 --https",
     "dev": "webpack-dev-server --hot --disable-host-check"
   }
 }
